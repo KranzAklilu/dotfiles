@@ -1,0 +1,57 @@
+[
+  {
+    "layer": "top",
+    "position": "top",
+    "spacing": 0,
+    "output": "!eDP-1",
+
+    "modules-left": [
+      "sway/workspaces",
+      "custom/uptime",
+      "cpu",
+      "custom/music",
+      "memory",
+      "disk",
+      "network#speed",
+    ],
+
+    "modules-center": ["clock"],
+
+    "modules-right": [
+      "custom/pomodoro",
+      "bluetooth",
+      "network",
+      "pulseaudio",
+      "backlight",
+      "temperature",
+      "battery",
+      "custom/notification",
+      "tray",
+    ],
+    "include": ["~/.config/waybar/modules.json"],
+  },
+
+  {
+    "layer": "top",
+    "position": "top",
+    "spacing": 0,
+    "output": "eDP-1",
+
+    "modules-left": ["sway/workspaces","cpu", "memory", "network#speed"],
+
+    "modules-center": ["clock"],
+
+    "modules-right": [
+      "custom/pomodoro",
+      "bluetooth",
+      "network",
+      "pulseaudio",
+      "backlight",
+      "temperature",
+      "battery",
+      "custom/notification",
+      "tray",
+    ],
+    "include": ["~/.config/waybar/modules.json"],
+  },
+]
